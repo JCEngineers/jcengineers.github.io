@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:add",
+  "argument1": "tinkercraft_grandworld_module:hbridges/noiseshift/base",
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": -1,
+    "argument2": "tinkercraft_grandworld_module:hbridges/noiseshift/shiftx"
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinkercraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="grassblock.png">
+</head>
+<body>
+    <header class="header">
+        <h1>Tinkercraft - Custom Pack Maker</h1>
+        <div class="header-buttons">
+            <button class="header-button" data-selected-version="20" data-key="20">1.20.x</button>
+            <button class="header-button selected" data-selected-version="21" data-key="21">1.21.x</button>
+        </div>
+    </header>
+
+    <div id="content-section">
+        <div class="main-content">
+            <!-- Collapsible Section Start -->
+            <div class="collapsible-section">
+                <button class="collapsible">Visuals</button>
+                <div class="collapsible-content">
+                    <p>Customize the appearance of your game with various visual enhancements.</p>
+                    <div class="card square-card" id="fresh-crops-card" data-key="fresh_crops">
+                        <span class="card-log" style="display:none;">
+                            <b>fresh_crops</b> or <i>smth idk</i>
+                        </span>
+                        <img src="icons/fresh_crops.svg" alt="Fresh Crops Icon" width="100" height="100" />
+                        <div class="card-label">Fresh Crops</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <!-- Collapsible Section Start -->
+            <div class="collapsible-section">
+                <button class="collapsible">UI</button>
+                <div class="collapsible-content">
+                    <p>Modify the user interface to suit your preferences.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <!-- Collapsible Section Start -->
+            <div class="collapsible-section">
+                <button class="collapsible">Retro</button>
+                <div class="collapsible-content">
+                    <p>Bring back the nostalgic feel of older versions of the game.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <!-- Collapsible Section Start -->
+            <div class="collapsible-section">
+                <button class="collapsible">Worldgen</button>
+                <div class="collapsible-content">
+                    <p>Adjust world generation settings for unique landscapes.</p>
+                    <div class="card square-card" id="grand-world-card" data-key="grand_world">
+                        <span class="card-log" style="display:none;">
+                            <b>grand worlds</b> or <i>smth idk</i>
+                        </span>
+                        <img src="icons/grand_world.svg" alt="Grand World Icon" width="100" height="100" />
+                        <div class="card-label">Grand World</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <!-- Collapsible Section Start -->
+            <div class="collapsible-section">
+                <button class="collapsible">Fun</button>
+                <div class="collapsible-content">
+                    <p>Add quirky and entertaining features to your game.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <div class="collapsible-section">
+                <button class="collapsible">OCD</button>
+                <div class="collapsible-content">
+                    <p>Perfectly align and organize everything in your game.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <div class="collapsible-section">
+                <button class="collapsible">Challenges</button>
+                <div class="collapsible-content">
+                    <p>Introduce new challenges to test your skills.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <div class="collapsible-section">
+                <button class="collapsible">Utility</button>
+                <div class="collapsible-content">
+                    <p>Enhance gameplay with useful tools and utilities.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <div class="collapsible-section">
+                <button class="collapsible">Crafting</button>
+                <div class="collapsible-content">
+                    <p>Revamp crafting recipes and mechanics.</p>
+                </div>
+            </div>
+            <!-- Collapsible Section End -->
+            <!-- Download Button Start -->
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="open-modal" class="download-button">Download</button>
+            </div>
+            <!-- Download Button End -->
+            <p>⠀</p>
+            <footer class="footer-bar">
+                <!-- Your footer content here -->
+                <div class="left-text">
+                <p>⠀⠀⠀⠀⠀© Tinkercraft 2024</p>
+                </div>
+                <div class="center-text">
+                    <p><a href="https://chroma-yt.github.io/Tinkercraft/Licensing">Licensing</a></p>
+                </div>
+                <div class="right-text">
+                    <p><a href="https://discord.gg/NPAMYNWDv6">Discord</a>⠀⠀⠀⠀⠀</p>
+                </div>
+            </footer>
+            <!-- Modal overlay and window (restore old structure) -->
+            <div class="modal-overlay"></div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-console">
+                        Initializing build environment...<br>
+                        Connecting to server 127.0.0.1:25565...<br>
+                        Access granted.<br>
+                        Downloading assets...<br>
+                        Injecting custom modules...<br>
+                        [OK] Build complete. Preparing download...<br>
+                    </div>
+                    <div class="modal-text">Your file is currently building! Please wait patiently, and your download will commence.</div>
+                    <button class="cancel-button">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <p>Hover over a pack to get started!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jszip@latest/dist/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

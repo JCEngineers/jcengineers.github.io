@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "argument1": "tinkercraft_grandworld_module:overworld_large_biomes/continents",
+  "argument2": 0
+}

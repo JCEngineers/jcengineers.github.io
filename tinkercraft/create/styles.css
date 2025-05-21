@@ -1,0 +1,532 @@
+/* Import the custom font */
+@font-face {
+  font-family: 'Minecraft Mojangles';
+  src: url('../font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+  background-image: url('dirt.png'); /* Set background image for the body */
+  background-repeat: repeat; /* Tile the background image */
+  background-size: 100px 100px; /* Ensure the dirt tiles match the size of the stone tiles */
+  background-position: top right; /* Start tiling from the top right */
+}
+
+.header {
+  width: 75%; /* Ensure the header takes full width */
+  height: 100px;
+  background-image: url('grass.png'); /* Set background image for the header */
+  background-repeat: repeat; /* Tile the background image */
+  background-size: 100px 100px; /* Ensure the grass tiles match the size of the dirt tiles */
+  background-position: top left; /* Start tiling from the top left */
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 0; /* Remove space between header and content */
+  display: flex;
+  justify-content: space-between; /* Spread out header content */
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.header-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #777; /* Light gray for non-selected */
+  color: white;
+  transition: background-color 0.3s ease;
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header-button.selected {
+  background-color: #555 !important;
+}
+
+.header-button:not(.selected):hover {
+  background-color: #555; /* Dark gray on hover */
+}
+
+#content-section {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+.main-content {
+  width: 75%; /* Ensure the main content takes up 75% of the page width */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the modal window container */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+}
+
+.modal.open {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the dark overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+.modal-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* Style the modal window content */
+.modal-content {
+  background-image: url('deepslate.png');
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  image-rendering: pixelated;
+  padding: 20px 20px 20px 20px; /* Remove extra left padding */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-button {
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #777;
+  color: white;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+}
+
+.modal-text {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 20px;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #555;
+}
+
+.modal-console {
+  background-color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  height: calc(100% - 60px);
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  font-size: 15px;
+  overflow-y: auto;
+  white-space: normal;
+  text-align: left;
+}
+
+.modal-console::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.modal-console::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.modal-console::-webkit-scrollbar-track {
+  background-color: #444;
+}
+
+/* Show modal and overlay when open */
+.modal.open,
+.modal-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0; /* Start at the top of the viewport */
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url('stone.png');
+  background-repeat: repeat;
+  background-size: 100px 100px; /* Ensure the stone tiles have the same size as the dirt tiles */
+  background-position: top right; /* Start tiling from the top right */
+}
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto; /* Makes the content scrollable */
+  padding-right: 10px; /* Adjusts padding to accommodate scrollbar */
+  font-size: 15px;
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* top align */
+}
+
+.sidebar-content p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding-top: 0;
+}
+
+.sidebar-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebar-text {
+  display: none; /* Hide the sidebar text div */
+}
+
+.collapsible-section {
+  margin-bottom: 10px;
+  padding: 0 20px; /* Add padding to left and right */
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  text-align: left; /* Align text to the left */
+  outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px; /* Add padding to the text inside the collapsibles */
+  background-color: rgba(255, 255, 255, 0.4); /* White background with 40% opacity */
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  word-break: break-word;
+  box-sizing: border-box;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.collapsible-content.open {
+  padding: 10px 20px; /* Restore padding when open */
+}
+
+.download-button {
+  padding: 0 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #777;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* center align */
+  font-family: 'Minecraft Mojangles', Arial, sans-serif;
+}
+
+.download-button:hover {
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  font-size: 0;
+  vertical-align: top;
+  line-height: 150px;
+  position: relative; /* Ensure proper positioning of child elements */
+  overflow: hidden; /* Prevent overflow of child elements */
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: darkgray;
+}
+
+.square.clicked {
+  background-color: palegreen;
+}
+
+.square.clicked:hover {
+  background-color: mediumseagreen;
+}
+
+.square img, .square .square-img {
+  transform: scale(1.25); /* scale up by 25% */
+  vertical-align: middle;
+  position: absolute; /* Ensure image positions correctly */
+  top: 50%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  transform: translate(-50%, -50%) scale(1.25); /* Adjust for the image's size and scale */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.left-text {
+  text-align: left;
+}
+
+/* Slider that hopefully works :) */
+.c-compare {
+  --h: 9;
+  --m: 1rem 0;
+  --w: 16;
+  --thumb-bgc: red;
+  --thumb-bgc-focus: hsla(0, 70%, 70%, 0.7);
+  --thumb-w: 1rem;
+  margin: var(--m);
+  position: relative;
+}
+
+.c-compare::after {
+  content: "";
+  display: block;
+  padding-bottom: calc((var(--h) / var(--w)) * 100%);
+}
+
+.c-compare__left, .c-compare__right {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.c-compare__left {
+  clip-path: polygon(0% 0%, var(--value) 0%, var(--value) 100%, 0% 100%);
+}
+
+.c-compare__right {
+  clip-path: polygon(100% 0%, var(--value) 0%, var(--value) 100%, 100% 100%);
+}
+
+.c-compare__range {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-compare__range::-moz-range-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;
+  width: var(--thumb-w);
+}
+
+.c-compare__range::-webkit-slider-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;
+  width: var(--thumb-w);
+}
+
+.c-compare__range:focus::-webkit-slider-thumb {
+  background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc);
+}
+
+.c-compare__range:focus::-moz-range-thumb {
+  background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc);
+}
+
+.c-compare__range::-moz-range-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
+.c-compare__range::-webkit-slider-runnable-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.c-compare__range, .c-compare__range::-webkit-slider-runnable-track, .c-compare__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.footer-bar {
+  font-size: large;
+  position: relative;
+  color: white;
+  bottom: 0;
+  width: 100%; /* Set the width to 75% of the screen width */
+  margin: 0 0 0 0;
+  height: 100px;
+  justify-content: space-between;
+  display: flex;
+  background-image: url('footer.png'); /* Set background image for the header */
+  background-repeat: repeat; /* Tile the background image */
+  background-position: -14px; /* Start tiling from the bottom left */
+  background-size: 100px 100px;
+  line-height: 75px;
+}
+
+.footer-bar a:link,
+.footer-bar a:visited,
+.footer-bar a:hover,
+.footer-bar a:active {
+  color: white;
+}
+
+.card {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #777;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.card.active {
+  background-color: #6bbf6b;
+}
+
+.card:hover {
+  background-color: #444;
+}
+
+.card.active:hover {
+  background-color: #388e3c; /* darker green for selected+hover */
+}
+
+.card.square-card {
+  width: 130px;
+  min-height: 130px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 10px 0;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  padding: 16px 4px 4px 4px;
+}
+
+.card.square-card.active {
+  background-color: #6bbf6b;
+}
+
+.card.square-card:hover {
+  background-color: #444;
+}
+
+.card.square-card.active:hover {
+  background-color: #388e3c; /* darker green for selected+hover */
+}
+
+.card.square-card svg {
+  display: block;
+}
+
+.card-label {
+  font-size: 15px;
+  margin-top: 2px;
+  font-family: inherit;
+  padding: 0 10px 6px 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Circle Sine and Cosine Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside id="sidebar" class="collapsed">
+        <button id="sidebarToggle" title="Hide controls">&#10006;</button>
+        <div id="sidebarContent">
+            <h2>Show Ratios</h2>
+            <label><input type="checkbox" id="showSine" checked> Sine</label>
+            <label><input type="checkbox" id="showCosine" checked> Cosine</label>
+            <label><input type="checkbox" id="showTangent" checked> Tangent</label>
+            <label><input type="checkbox" id="showSecant" checked> Secant</label>
+            <label><input type="checkbox" id="showCosecant" checked> Cosecant</label>
+            <label><input type="checkbox" id="showCotangent" checked> Cotangent</label>
+            <hr>
+            <label style="margin-bottom:8px;">
+                <input type="checkbox" id="shaderModeToggle">
+                Shader Mode
+            </label>
+            <div class="slider-row">
+                <label for="speedSlider">Rotation Speed</label>
+                <span id="speedValue"></span>
+            </div>
+            <input type="range" id="speedSlider" min="0.001" max="0.1" step="0.001" value="0.02">
+            <div class="slider-row" style="margin-top:10px;">
+                <label for="directionToggle">Direction</label>
+                <button id="directionToggle" type="button" title="Toggle direction"><span id="directionIcon">→</span></button>
+            </div>
+            <button id="gifButton" style="margin-top:16px;">Render GIF &amp; Download</button>
+            <div style="margin-top:10px;">
+                <label for="gifQuality" style="font-size:15px;">
+                    GIF Quality:
+                    <select id="gifQuality" style="margin-left:6px;">
+                        <option value="1">1 (best, slowest)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4" selected>4 (default)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8 (fastest, lowest)</option>
+                    </select>
+                </label>
+            </div>
+            <div style="font-size:13px; color:#aaa; margin-top:8px; line-height:1.4;">
+                Lower quality = faster render, larger file, less detail.<br>
+                1 is slowest/best, 8 is fastest/lowest.
+            </div>
+        </div>
+    </aside>
+    <button id="sidebarTab" title="Show controls">&#9776;</button>
+    <canvas id="unitCircle"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js.optimized/dist/gif.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

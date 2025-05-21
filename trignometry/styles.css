@@ -1,0 +1,274 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background: #111;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+h1 {
+    margin: 16px 0 0 0;
+}
+
+#modeButtons {
+    display: flex;
+    gap: 10px;
+}
+
+#modeButtons button {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#modeButtons button.active {
+    background: #0074D9;
+    color: #fff;
+    border-color: #0074D9;
+}
+
+#modeButtons button:hover {
+    background: #333;
+}
+
+canvas {
+    background: #111;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: calc(100vh - 48px);
+    margin-left: 0;
+    transition: margin-left 0.2s;
+}
+
+body.sidebar-open canvas {
+    margin-left: 220px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: #181818;
+    color: #fff;
+    box-shadow: 2px 0 8px #000a;
+    z-index: 1000;
+    transition: transform 0.2s, opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#sidebar:not(.collapsed) {
+    pointer-events: auto;
+}
+
+#sidebar.collapsed {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sidebar.collapsed #sidebarContent {
+    display: none;
+}
+
+#sidebar.collapsed #sidebarToggle {
+    /* Show the tab even when sidebar is hidden */
+    transform: translateX(100%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#sidebar #sidebarToggle {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 36px;
+    height: 36px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 2px 0 8px #000a;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#sidebar.collapsed #sidebarToggle {
+    position: fixed;
+    left: 0;
+    top: 16px;
+    transform: none;
+    opacity: 1;
+    background: #222;
+    box-shadow: 2px 0 8px #000a;
+    pointer-events: auto;
+    z-index: 1002;
+    display: block;
+}
+
+#sidebarTab {
+    position: fixed;
+    top: 16px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1002;
+    box-shadow: 2px 0 8px #000a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, opacity 0.2s;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#sidebar:not(.collapsed) + #sidebarTab {
+    display: none;
+}
+
+#sidebarContent {
+    margin: 60px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+#sidebarContent h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+#sidebarContent label {
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#sidebarContent input[type="range"] {
+    width: 100%;
+    margin: 0 0 8px 0;
+    accent-color: #0074D9;
+    background: transparent;
+    height: 4px;
+}
+
+#speedValue,
+#directionValue {
+    display: inline-block;
+    min-width: 48px;
+    margin-left: 4px;
+    color: #ccc;
+    vertical-align: middle;
+}
+
+#speedValue {
+    font-size: 15px;
+    color: #00d8a7;
+    min-width: 48px;
+    text-align: right;
+    font-family: monospace;
+}
+
+#directionToggle {
+    background: #222;
+    color: #fff;
+    border: 1.5px solid #444;
+    border-radius: 20px;
+    width: 38px;
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: background 0.15s, border-color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    box-shadow: 0 1px 4px #0006;
+}
+#directionToggle.active {
+    background: #0074D9;
+    border-color: #0074D9;
+    color: #fff;
+}
+#directionToggle:focus {
+    outline: 2px solid #0074D9;
+}
+#directionIcon {
+    font-size: 20px;
+    pointer-events: none;
+}
+
+/* Remove canvas margin shift */
+body.sidebar-open canvas,
+canvas {
+    margin-left: 0 !important;
+}
+
+/* Responsive sidebar width (optional, keep if you want) */
+@media (max-width: 600px) {
+    #sidebar {
+        width: 160px;
+    }
+    body.sidebar-open canvas {
+        margin-left: 160px;
+    }
+}
+
+/* Shader Mode Glow Effects */
+body.shader-mode canvas {
+    filter: drop-shadow(0 0 24px #0ff) drop-shadow(0 0 48px #0ff8);
+    /* Only the canvas glows in shader mode */
+}
+
+/* Remove all other shader-mode UI glow */
+body.shader-mode #sidebarContent label,
+body.shader-mode #sidebarContent h2,
+body.shader-mode #sidebar,
+body.shader-mode #sidebarToggle,
+body.shader-mode #sidebarTab,
+body.shader-mode #sidebarContent input[type="range"]::-webkit-slider-thumb,
+body.shader-mode #sidebarContent input[type="range"]::-moz-range-thumb,
+body.shader-mode #sidebarContent input[type="range"]::-ms-thumb {
+    /* No glow */
+    text-shadow: none !important;
+    box-shadow: none !important;
+}

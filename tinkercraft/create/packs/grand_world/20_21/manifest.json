@@ -1,0 +1,650 @@
+[
+  {
+    "name": "overworld.json",
+    "location": "datapack/data/minecraft/dimension_type",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "jaggedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "barrier.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continents.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "depth.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "final_density.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "fluid_level_floodedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "fluid_level_spread.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "initial_density_without_jaggedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "lava.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridges.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "temperature.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "vegetation.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "vein_gap.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "vein_ridged.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "vein_toggle.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "offset.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridges.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "temperature.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "jaggedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continents.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "depth.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "final_density.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "fluid_level_floodedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "initial_density_without_jaggedness.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "temperature.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "vegetation.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes/noise_router",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "offset.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "temperature.json",
+    "location": "datapack/data/minecraft/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "large_biomes.json",
+    "location": "datapack/data/minecraft/worldgen",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continentalness.json",
+    "location": "datapack/data/minecraft/worldgen/noise",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continentalness_large.json",
+    "location": "datapack/data/minecraft/worldgen/noise",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion.json",
+    "location": "datapack/data/minecraft/worldgen/noise",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridge.json",
+    "location": "datapack/data/minecraft/worldgen/noise",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "large_biomes.json",
+    "location": "datapack/data/minecraft/worldgen/noise_settings",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "overworld.json",
+    "location": "datapack/data/minecraft/worldgen/noise_settings",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "overworld.json",
+    "location": "datapack/data/minecraft/worldgen",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "warmer_stony_shore.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/lithostitched/worldgen_modifier",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "deep_ocean_depth.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "desert_dunes.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion_noise.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "lava_rivers.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ocean_depth.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "terrain_scale.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "underground_river_multiplier.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "underground_river_toggle.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/constants",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "base.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges/noiseshift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "shiftx.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges/noiseshift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "shiftz.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges/noiseshift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "slopex.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges/noiseshift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "slopez.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges/noiseshift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridges.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "shifteddetail.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "weathering.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "aquifer_parameters.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "caves.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/cliff",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continents.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "depth.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "total.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/dunes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "lava_rivers.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "cliffs.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/legacy",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "erosion_folded.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/legacy",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "offset_noise.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/legacy",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridges_folded.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/legacy",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "min_offset.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridges.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "sloped_cheese.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_2d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_lax_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_strict_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "pillar.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "total.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "wackiness.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "aquifer_parameters.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/cliff",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "continents.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "depth.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "cliffs.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/legacy",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "sloped_cheese.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_2d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_lax_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "parameters_strict_3d.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "total.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes/underground_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "wackiness.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/density_function/overworld_large_biomes",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "x.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/cave_shift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "y.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/cave_shift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "z.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/cave_shift",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "rarity.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/cliffs",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridge.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/dune",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "warp.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/dune",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "base.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "detailed.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "weathering.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/hbridges",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "ridge.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/lava_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "thickness.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/lava_river",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "1.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/offset",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "2.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/offset",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "3.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/offset",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "location.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/pillar",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "shift_x.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/pillar",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "shift_z.json",
+    "location": "datapack/data/tinkercraft_grandworld_module/worldgen/noise/pillar",
+    "merge": true,
+    "version": 1
+  },
+  {
+    "name": "pack.mcmeta",
+    "location": "datapack",
+    "merge": true,
+    "version": 1
+  }
+]

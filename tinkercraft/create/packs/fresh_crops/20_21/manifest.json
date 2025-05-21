@@ -1,0 +1,592 @@
+[
+  {
+    "name": "beetroots.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "carrots.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "melon_stem.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "potatoes.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "wheat.json",
+    "location": "resourcepack/assets/minecraft/blockstates",
+    "merge": true
+  },
+  {
+    "name": "attached_melon_stem.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "attached_pumpkin_stem.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage3a.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage3b.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage3c.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "beetroots_stage3d.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage3a.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage3b.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage3c.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "carrots_stage3d.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth4.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth5.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth6.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "melon_stem_growth7.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage3a.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage3b.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage3c.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "potatoes_stage3d.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth4.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth5.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth6.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "pumpkin_stem_growth7.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage0.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage1.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage2.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage3.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage4.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage5.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage6.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage7.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage7a.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage7b.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage7c.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "wheat_stage7d.json",
+    "location": "resourcepack/assets/minecraft/models/block",
+    "merge": true
+  },
+  {
+    "name": "attached_melon_stem.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "attached_pumpkin_stem.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage0.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage3a.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage3b.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage3c.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "beetroots_stage3d.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_break.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage0.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage3a.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage3b.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage3c.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "carrots_stage3d.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_break.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage0.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage4.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage5.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage6.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "melon_stem_stage7.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_break.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage0.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage3a.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage3b.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage3c.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "potatoes_stage3d.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_break.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage0.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage4.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage5.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage6.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "pumpkin_stem_stage7.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_break.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage1.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage2.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage3.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage4.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage5.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage6.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage7.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage7a.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage7b.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage7c.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  },
+  {
+    "name": "wheat_stage7d.png",
+    "location": "resourcepack/assets/minecraft/textures/block",
+    "merge": false
+  }
+]

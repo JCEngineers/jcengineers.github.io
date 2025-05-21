@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder to JSON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <h2>Drop a folder anywhere on this page</h2>
+        <div style="width:80vw;max-width:700px;">
+            <button id="copy-json" style="margin-bottom:10px;">Copy JSON</button>
+            <pre id="json-output" style="background:#181818;color:#fff;padding:16px;border-radius:8px;min-height:200px;overflow:auto;"></pre>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jszip@latest/dist/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
